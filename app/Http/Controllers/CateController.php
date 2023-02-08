@@ -42,6 +42,11 @@ class CateController extends Controller
         DB::table("categlory")->insert(['name'=>$t,'description'=>$mt]);
         return redirect('/listcate');
     }
+
+    public function index(){
+        $cate = Categlory::all();
+        return view('admin.listcate') -> with('ds',$cate);
+    }
 }
 
 

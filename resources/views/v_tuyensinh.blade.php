@@ -44,11 +44,10 @@
     </form>
 
     @if(isset($toan) && isset($ly) && isset($hoa))
-        <div>Tong diem: {{ $toan + $ly + $hoa + $ut}}</div>
         <div>Diem uu tien:
             @if($kv==1 || $kv==2)
                 5
-                <?php
+                    <?php
                     $ut = 5;
                     ?>
             @elseif($kv==3)
@@ -63,6 +62,7 @@
                     ?>
             @endif
         </div>
+        <div>Tong diem: {{ $toan + $ly + $hoa + $ut}}</div>
     @endif
 </body>
 </html>
