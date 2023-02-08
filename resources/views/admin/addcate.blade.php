@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('main')
 <div>
-    <p>Them loai san pham</p>
+    <p class="row bg-danger py-2">Them loai san pham</p>
     <form action="listcatepost" method="post">
         {{csrf_field()}}
         <div class="mb-3">
